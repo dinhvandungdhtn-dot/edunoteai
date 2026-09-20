@@ -6,19 +6,18 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
   base: '/edunoteai/',
-  plugins: [react()],
-}) => {
-  return {
-    plugins: [
-      react(),
-      tailwindcss(),
-      VitePWA({
-        registerType: 'autoUpdate',
-        includeAssets: ['favicon.png', 'apple-touch-icon.png', 'icon.svg', 'icon-maskable.svg'],
-        manifest: {
-          id: '/',
-          name: 'Edunote AI – Sổ Tay Giáo Dục Cá Nhân',
-          short_name: 'Edunote AI',
+  plugins: [
+    react(),
+    tailwindcss(),
+    VitePWA({
+      registerType: 'autoUpdate',
+      includeAssets: ['favicon.png', 'apple-touch-icon.png', 'icon.svg', 'icon-maskable.svg'],
+      manifest: {
+        id: '/edunoteai/',
+        scope: '/edunoteai/',
+        start_url: '/edunoteai/',
+        name: 'Edunote AI – Sổ Tay Giáo Dục Cá Nhân',
+        short_name: 'Edunote AI',
           description: 'Sổ tay giáo dục cá nhân hỗ trợ giáo viên quản lý lớp học, đánh giá năng lực học sinh và xuất báo cáo chuẩn mực.',
           theme_color: '#1e40af',
           background_color: '#1e40af',
