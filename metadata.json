@@ -1,0 +1,8 @@
+{
+  "name": "Edunote AI – Sổ Tay Giáo Dục Cá Nhân",
+  "description": "Ứng dụng di động Edunote AI hỗ trợ giáo viên quản lý lớp học, đánh giá năng lực học sinh, gợi ý nhận xét sư phạm bằng AI và xuất báo cáo Excel chuẩn mực.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
