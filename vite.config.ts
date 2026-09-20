@@ -2,6 +2,8 @@ import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
@@ -18,6 +20,10 @@ export default defineConfig({
         start_url: '/edunoteai/',
         name: 'Edunote AI – Sổ Tay Giáo Dục Cá Nhân',
         short_name: 'Edunote AI',
+      }
+    })
+  ]
+});
           description: 'Sổ tay giáo dục cá nhân hỗ trợ giáo viên quản lý lớp học, đánh giá năng lực học sinh và xuất báo cáo chuẩn mực.',
           theme_color: '#1e40af',
           background_color: '#1e40af',
